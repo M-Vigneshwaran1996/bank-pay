@@ -26,9 +26,9 @@ Flask API
 Elasticsearch
 ![image](https://github.com/user-attachments/assets/bb8c292c-8059-4dbb-a4c4-7cff98379387)
 
-<b>$ sudo docker-compose up -d --build</b> 
 
 # Usage
-Flask App: python flask-app/app.py<br>
-Consumer : python kafka-consumer/consumer.py<br>
-Kibana Dashboard: localhost:5602 <br>
+<b>$ sudo docker-compose up -d --build</b> 
+Flask App: <b> python flask-app/app.py</br>
+Consumer : <b> python kafka-consumer/consumer.py</br>
+Kibana Dashboard: <b> localhost:5602 </br>
