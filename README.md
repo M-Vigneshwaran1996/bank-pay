@@ -19,6 +19,8 @@ Data Flow
 
 Flask API
 ![image](https://github.com/user-attachments/assets/6c29d976-9dc9-4567-af10-e66f9e6e092b)
+![image](https://github.com/user-attachments/assets/ede9584b-ac45-4fa1-8d33-da8ffd41d44f)
+
 
 Elasticsearch
 ![image](https://github.com/user-attachments/assets/bb8c292c-8059-4dbb-a4c4-7cff98379387)
