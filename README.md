@@ -15,13 +15,13 @@ Kibana to visualize Elasticsearch data<br>
 
 Data Flow
 
-[Client] → [Flask API] → [Kafka Producer] → [Kafka Topic]
-                                      ↓
-                               [Kafka Consumer]
-                                      ↓
-                              [Store to Elasticsearch]
-                                      ↓
-                                   [Kibana Visualization]
+![image](https://github.com/user-attachments/assets/5ba58e3e-fabd-4f6f-8fae-31e91c1fc92f) 
+
+Flask API
+![image](https://github.com/user-attachments/assets/6c29d976-9dc9-4567-af10-e66f9e6e092b)
+
+Elasticsearch
+![image](https://github.com/user-attachments/assets/bb8c292c-8059-4dbb-a4c4-7cff98379387)
 
 <b>$ sudo docker-compose up -d --build</b> 
 
