@@ -8,7 +8,7 @@ Flask App get that data and load to Kafka topic for every transaction.<br>
 
 - Consumer:<br>
 Kafka Consumer subscribe the kafka Producer and waiting for message data<br>
-Consumer fetch the data and writes to Elasticsearch.<br>
+Consumer fetch the data and transforming using ingest_pipeline processors and writes to Elasticsearch.<br>
 
 - Visualization:<br>
 Kibana to visualize Elasticsearch data<br>
