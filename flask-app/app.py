@@ -23,11 +23,9 @@ def send_transaction_to_kafka(transaction):
     try:
         print("Sending transaction to Kafka:", transaction)
         producer.send("payment_transactions", transaction)
-        # result = future.get(timeout=10)  # <-- wait for Kafka ACK
-        # print("✅ Kafka send success:", result)
         producer.flush()
     except Exception as e:
-        print("❌ Kafka send failed:", e)
+        print("Kafka send failed:", e)
 
 
 
@@ -62,7 +60,7 @@ def get_transactions():
             "match_all": {}
         }
     }
-    print("Query*****************:", query)
+    print("Query :", query)
     data = es.search(index='payment_transactions', body=query)
     transactions = [hit['_source'] for hit in data['hits']['hits']]
     return jsonify(transactions), 200

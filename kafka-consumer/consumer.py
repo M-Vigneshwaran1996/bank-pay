@@ -32,5 +32,5 @@ print("*********Kafka consumer started and subscribed to topics:", consumer.subs
 for message in consumer:
     transaction = message.value
     print("Received transaction:**********", transaction)
-    es.index(index='payment_transactions', body=transaction)
+    es.index(index='payment_transactions', body=transaction, pipeline='transaction_pipeline')
     print(f"Indexed transaction: {transaction}")
