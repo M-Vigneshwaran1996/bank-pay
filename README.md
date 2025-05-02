@@ -30,6 +30,6 @@ Elasticsearch
 # Usage
 <b>$ sudo docker-compose up -d --build</b> 
 
-Flask App: <b> python flask-app/app.py</br>
+Flask App: <b> python flask-app/app.py </br>
 Consumer : <b> python kafka-consumer/consumer.py</br>
 Kibana Dashboard: <b> localhost:5602 </br>
