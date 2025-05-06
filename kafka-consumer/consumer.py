@@ -12,7 +12,24 @@ if not es.ping():
 else:
     print("Connected to Elasticsearch")
 
+ingest_pipeline = {
+    "description": "Ingest pipeline for transaction data",
+    "processors": [
+        {
+            "set": {
+                "field": "bank",
+                "value": "hdfc bank"
+            }
+        },
+        {
+            "uppercase": {
+                "field": "bank"
+            }
+        }
+    ]
+}
 
+es.ingest.put_pipeline(id='transaction_pipeline', body=ingest_pipeline)
 
 if not es.indices.exists(index='payment_transactions'):
     es.indices.create(index='payment_transactions', ignore=400)
