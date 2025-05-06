@@ -13,17 +13,20 @@ Consumer fetch the data and transforming using ingest_pipeline processors and wr
 - Visualization:<br>
 Kibana to visualize Elasticsearch data<br>
 
-Data Flow
+## Data Flow
 
 ![image](https://github.com/user-attachments/assets/5ba58e3e-fabd-4f6f-8fae-31e91c1fc92f) 
 
-Flask API
+## Flask API
 ![image](https://github.com/user-attachments/assets/6c29d976-9dc9-4567-af10-e66f9e6e092b)
 
 ![image](https://github.com/user-attachments/assets/ede9584b-ac45-4fa1-8d33-da8ffd41d44f)
 
+## Flask GET API
 
-Elasticsearch
+![image](https://github.com/user-attachments/assets/acf57cd8-35bc-4a5c-be9f-131b7268116d)
+
+## Elasticsearch
 ![image](https://github.com/user-attachments/assets/bb8c292c-8059-4dbb-a4c4-7cff98379387)
 
 
