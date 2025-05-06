@@ -18,7 +18,7 @@ ingest_pipeline = {
         {
             "set": {
                 "field": "bank",
-                "value": "HDFC Bank"
+                "value": "hdfc bank"
             }
         },
         {
